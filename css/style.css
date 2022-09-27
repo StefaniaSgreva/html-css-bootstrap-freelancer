@@ -1,4 +1,11 @@
 /* common  */
+:root{
+    --dark-cyan-blue: #2C3E50;
+    --light-cyan-blue:#3A546D;
+    --green-cyan: #1ABC9C;
+    --dark-charcoal: #333333;
+    --white: #ffffff;
+}
 *{
     margin: 0;
     padding: 0;
@@ -10,21 +17,21 @@ body{
 }
 
 .bg-green{
-    background-color: green;
+    background-color: var(--green-cyan);
+    color: var(--white);
 }
-.bg-gray{
-    background-color: lightgray;
+.bg-blue{
+    background-color: var(--light-cyan-blue);
+    color: var(--white);
 }
-.bg-dark-gray{
-    background-color: gray;
+.bg-dark-blue{
+    background-color: var(--dark-cyan-blue);
+    color: var(--white);
 }
-.my-bg-black{
-    background-color: black;
-}
+
 
 /* header  */
 header{
-    background-color: black;
     position: fixed;
     height: 90px;
     top: 0;
@@ -33,8 +40,8 @@ header{
 #hero{
     padding-top: 100px;
 }
-img .avatar{
-    width: 70%;
+.avatar img{
+    width: 40%;
     max-width: 100%;
 }
  /* header nav .nav-link:hover{

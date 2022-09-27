@@ -11,7 +11,7 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-md navbar-dark my-bg-black h-100">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark-blue h-100">
             <div class="container-md">
               <a class="navbar-brand" href="#">Start Bootstrap</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#boot-navbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,8 +38,10 @@
             <div class="container-md">
                 <div class="row justify-content-center">
                     <div class="col-auto text-center">
-                        <img class="avatar" src="./img/avatar.svg" alt="Avatar">
-                        <h1 class="text-uppercase">Start Bootstrap</h1>
+                        <div class="avatar">
+                            <img class="avatar" src="./img/avatar.svg" alt="Avatar">
+                        </div>
+                         <h1 class="text-uppercase">Start Bootstrap</h1>
                     </div>
                 </div>
             </div>
@@ -61,13 +63,15 @@
         </section>
     </main>
     <footer>
-        <div id="footer-top" class="bg-gray">
+        <div id="footer-top" class="bg-blue">
             <div class="container-md">
                 top footer
             </div>
         </div>
-        <div id="footer-bottom" class="bg-dark-gray">
-            bottom footer
+        <div id="footer-bottom" class="bg-dark-blue">
+            <div class="container-md">
+                bottom footer
+            </div>
         </div>
     </footer>
 </body>
