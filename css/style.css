@@ -1,0 +1,42 @@
+/* common  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: bisque;
+}
+
+.bg-green{
+    background-color: green;
+}
+.bg-gray{
+    background-color: lightgray;
+}
+.bg-dark-gray{
+    background-color: gray;
+}
+.my-bg-black{
+    background-color: black;
+}
+
+/* header  */
+header{
+    background-color: black;
+    position: fixed;
+    height: 90px;
+    top: 0;
+    width: 100%;
+}
+#hero{
+    padding-top: 100px;
+}
+img .avatar{
+    width: 70%;
+    max-width: 100%;
+}
+ /* header nav .nav-link:hover{
+    
+ } */
