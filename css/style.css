@@ -13,7 +13,8 @@
 }
 
 body{
-    background-color: bisque;
+    background-color: var(--white);
+    color: var(--dark-charcoal);
 }
 
 .bg-green{
@@ -33,10 +34,19 @@ body{
 /* header  */
 header{
     position: fixed;
-    height: 90px;
+    height: 60px;
     top: 0;
     width: 100%;
 }
+.nav-fs{
+    font-size: 14px;
+    color: var(--white);
+    font-weight: 500;
+}
+ header nav .nav-link:hover{
+    color: var(--green-cyan);
+    text-decoration: underline;
+ }
 #hero{
     padding-top: 100px;
 }
@@ -44,6 +54,14 @@ header{
     width: 40%;
     max-width: 100%;
 }
- /* header nav .nav-link:hover{
-    
- } */
+.line{
+    display: inline-block;
+    background-color: var(--white);
+    padding: 2px;
+    width: 90px;
+    margin: 0 10px;
+}
+.break-line i{
+    vertical-align: middle;
+}
+
