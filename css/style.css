@@ -31,19 +31,23 @@ body{
     background-color: var(--dark-cyan-blue);
     color: var(--white);
 }
-
-
+.my-mt{
+    margin-top: 65px;
+}
 /* header  */
 header{
     position: fixed;
-    height: 60px;
+    height: 90px;
     top: 0;
     width: 100%;
 }
+.navbar-brand{
+    font-size: 28px;
+}
 .nav-fs{
-    font-size: 14px;
+    font-size: 18px;
     color: var(--white);
-    font-weight: 500;
+    font-weight: bold;
 }
  header nav .nav-link:hover{
     color: var(--green-cyan);
@@ -51,9 +55,10 @@ header{
  }
 #hero{
     padding-top: 100px;
+    padding-bottom: 65px;
 }
 .avatar img{
-    width:50%;
+    width:35%;
     max-width: 100%;
 }
 h1{
@@ -63,11 +68,11 @@ h1{
     display: inline-block;
     background-color: var(--white);
     padding: 1.5px;
-    width: 200px;
+    width: 220px;
     margin: 0 10px;
 }
 .break-line i{
-    font-size: 25px;
+    font-size: 30px;
     vertical-align: middle;
     padding: 0 15px;
 }
@@ -75,10 +80,14 @@ h1{
     display: inline-block;
     background-color: var(--dark-cyan-blue);
     padding: 1.5px;
-    width: 200px;
+    width: 220px;
     margin: 0 10px;
 }
+.qualifications{
+    font-size: 30px;
+    font-weight: 500;
+}
 .title{
-    font-size: 54px;
+    font-size: 60px;
 }
 
