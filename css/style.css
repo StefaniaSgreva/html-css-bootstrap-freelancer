@@ -55,6 +55,10 @@ body{
  #contact .star:before , #contact .star:after{
     background-color: var(--dark-cyan-blue);
  }
+ .container-small{
+    max-width: 70%;
+    margin: 0 auto;
+ }
 /*************************************************
     HEADER
  *************************************************/
@@ -83,7 +87,6 @@ header{
  *************************************************/
 #hero{
     padding-top: 100px;
-    /* padding-bottom: 65px; */
 }
 .avatar{
     width:40%;
@@ -126,11 +129,7 @@ header{
     /* display: flex; */
 }
 /* ABOUT  */
-.about-box{
-    width: 80%;
-    margin: 0 auto;
-}
-.about-box p{
+#about p{
     font-size: 14px;
     font-weight: 600;
 }
@@ -187,18 +186,24 @@ footer h3{
 /*************************************************
     RESIZE
  *************************************************/
-@media screen and (max-width:576px){
-    .about-box{
-        width: 60%;
-    }
-    #contact{
-        width: 70%;
-        margin: 0 auto;
-    }
+ @media screen and (max-width:768px){
     .copyright{
         font-size: 14px;
     }
+ }
+@media screen and (max-width:576px){
     .star{
         width: 200px;
      }
+    .container-small{
+        max-width: 60%;
+     }
+     #about p{
+        font-size: 18px;
+        font-weight: 600;
+    }
+    .my-btn{
+        width: 120px;
+        font-size: 16px;
+    }
 }
