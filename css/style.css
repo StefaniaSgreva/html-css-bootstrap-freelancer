@@ -139,7 +139,8 @@ header{
     border: 1px solid var(--white);
     border-radius: 5px;
     background-color: transparent;
-    padding: 5px;
+    width: 100px;
+    height: 40px;
     font-size: 14px;
     cursor: pointer;
 }
@@ -182,4 +183,22 @@ footer h3{
 }
 .copyright{
     font-size: 10px;
+}
+/*************************************************
+    RESIZE
+ *************************************************/
+@media screen and (max-width:576px){
+    .about-box{
+        width: 60%;
+    }
+    #contact{
+        width: 70%;
+        margin: 0 auto;
+    }
+    .copyright{
+        font-size: 14px;
+    }
+    .star{
+        width: 200px;
+     }
 }
