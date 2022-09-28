@@ -125,6 +125,29 @@ header{
     opacity: 1;
     /* display: flex; */
 }
+/* ABOUT  */
+.about-box{
+    width: 80%;
+    margin: 0 auto;
+}
+.about-box p{
+    font-size: 14px;
+    font-weight: 600;
+}
+.my-btn{
+    color: var(--white);
+    border: 1px solid var(--white);
+    border-radius: 5px;
+    background-color: transparent;
+    padding: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+.my-btn:hover{
+    color: var(--green-cyan);
+    background-color: var(--white);
+    transform: scale(1.1);
+}
 /*************************************************
     FOOTER
  *************************************************/
