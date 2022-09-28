@@ -33,46 +33,45 @@ body{
     background-color: var(--dark-cyan-blue);
     color: var(--white);
 }
-.my-mt{
-    margin-top: 65px;
-}
-.line{
-    display: inline-block;
+.star{
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+ .star .fa-solid .fa-star{
+    width: 20%;
+ }
+ .star:before , .star:after{
+    content: '';
+    display: block;
     background-color: var(--white);
-    height: 4px;
-    width: 200px;
-    margin: 0 10px;
-}
-.break-line i{
-    font-size: 30px;
-    vertical-align: middle;
-    padding: 0 15px;
-}
-.line-dark{
-    display: inline-block;
+    height: 3px;
+    width: 40%;
+ }
+ #portfolio .star:before , #portfolio .star:after{
     background-color: var(--dark-cyan-blue);
-    padding: 2px;
-    width: 200px;
-    margin: 0 10px;
-}
+ }
 /*************************************************
     HEADER
  *************************************************/
 header{
     position: fixed;
-    height: 90px;
+    height: 60px;
     top: 0;
     width: 100%;
+    z-index: 1000;
+}  
+.nav-text{
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 500;
 }
-.navbar-brand{
-    font-size: 28px;
-}
-.nav-fs{
-    font-size: 18px;
+ #boot-navbar .nav-link, .navbar-toggler .fa-solid.fa-bars{
     color: var(--white);
-    font-weight: bold;
-}
- header nav .nav-link:hover{
+    background-color: var(--dark-cyan-blue);
+ }
+ #boot-navbar .nav-link:hover, .navbar-toggler:hover .fa-solid.fa-bars:hover{
     color: var(--green-cyan);
     text-decoration: underline;
  }
@@ -81,22 +80,58 @@ header{
  *************************************************/
 #hero{
     padding-top: 100px;
-    padding-bottom: 65px;
+    /* padding-bottom: 65px; */
 }
-.avatar img{
-    width:35%;
+.avatar{
+    width:40%;
     max-width: 100%;
+}
+#hero h2{
+    text-transform: uppercase;
+    font-size: 20px;
 }
 /*************************************************
     MAIN
  *************************************************/
+ /* PORTFOLIO  */
+.layover-container{
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+}
+.layover-container::after{
+    content: '+';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(26, 188, 156, .5);
+    font-size: 80px;
+    font-weight: 800;
+    color: var(--white);
+    /*display: none; N.B.su display le transizioni non funzionano*/
+    z-index: 1;
 
+    opacity: 0;
+    transition: opacity 1000ms;
+}
+.layover-container:hover::after{
+    opacity: 1;
+    /* display: flex; */
+}
 /*************************************************
     FOOTER
  *************************************************/
 #footer-top{
     height: 250px;
 }
+.social-icon{
+
+}
+
 #footer-bottom{
     height: 100px;
 }
