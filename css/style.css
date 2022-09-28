@@ -52,6 +52,9 @@ body{
  #portfolio .star:before , #portfolio .star:after{
     background-color: var(--dark-cyan-blue);
  }
+ #contact .star:before , #contact .star:after{
+    background-color: var(--dark-cyan-blue);
+ }
 /*************************************************
     HEADER
  *************************************************/
